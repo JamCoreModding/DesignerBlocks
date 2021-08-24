@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "designerblocks:d_glass",
+    "count": 9
+  }
+}

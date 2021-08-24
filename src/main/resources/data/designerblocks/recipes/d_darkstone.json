@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "designerblocks:darkstone"
+    }
+  },
+  "result": {
+    "item": "designerblocks:d_darkstone",
+    "count": 9
+  }
+}

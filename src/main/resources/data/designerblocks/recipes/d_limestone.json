@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "designerblocks:limestone"
+    }
+  },
+  "result": {
+    "item": "designerblocks:d_limestone",
+    "count": 9
+  }
+}
