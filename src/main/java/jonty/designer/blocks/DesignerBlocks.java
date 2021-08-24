@@ -30,6 +30,7 @@ public class DesignerBlocks implements ModInitializer {
     public static final Item BALL = new Item(new Item.Settings().group(ItemGroup.MISC));
 
     public static final Block D_GLASS = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never));
+    public static final Block ONE_WAY_STONE = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never));
 
     public static final Block D_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block D_SANDSTONE = new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
@@ -74,10 +75,11 @@ public class DesignerBlocks implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("designerblocks", "ball"), BALL);
 
         registerBlock("d_glass", D_GLASS, ItemGroup.BUILDING_BLOCKS);
+        registerBlock("one_way_stone", ONE_WAY_STONE, ItemGroup.BUILDING_BLOCKS);
         registerBlock("d_stone", D_STONE, ItemGroup.BUILDING_BLOCKS);
         registerBlock("d_sandstone", D_SANDSTONE, ItemGroup.BUILDING_BLOCKS);
         registerBlock("d_limestone", D_LIMESTONE, ItemGroup.BUILDING_BLOCKS);
-        registerBlock("d_darksstone", D_DARKSTONE, ItemGroup.BUILDING_BLOCKS);
+        registerBlock("d_darkstone", D_DARKSTONE, ItemGroup.BUILDING_BLOCKS);
 
         registerBlock("darkstone", DARKSTONE, ItemGroup.MATERIALS);
         registerBlock("limestone", LIMESTONE, ItemGroup.MATERIALS);
