@@ -40,6 +40,8 @@ public class DesignerBlocks implements ModInitializer {
     public static final Block LIMESTONE = new Block(FabricBlockSettings.of(Material.STONE).strength(2, 4).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block DARKSTONE = new Block(FabricBlockSettings.of(Material.STONE).strength(2, 4).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
+    public static final Block D_WOOL_RED = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+
     private static final ConfiguredFeature<?, ?> LIMESTONE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
@@ -72,8 +74,6 @@ public class DesignerBlocks implements ModInitializer {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, darkstoneOverworld.getValue(), DARKSTONE_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, darkstoneOverworld);
 
-        Registry.register(Registry.ITEM, new Identifier("designerblocks", "ball"), BALL);
-
         registerBlock("d_glass", D_GLASS, ItemGroup.BUILDING_BLOCKS);
         registerBlock("one_way_stone", ONE_WAY_STONE, ItemGroup.BUILDING_BLOCKS);
         registerBlock("d_stone", D_STONE, ItemGroup.BUILDING_BLOCKS);
@@ -83,6 +83,8 @@ public class DesignerBlocks implements ModInitializer {
 
         registerBlock("darkstone", DARKSTONE, ItemGroup.MATERIALS);
         registerBlock("limestone", LIMESTONE, ItemGroup.MATERIALS);
+
+        registerBlock("d_wool_red", D_WOOL_RED, ItemGroup.BUILDING_BLOCKS);
     }
 
     private void registerBlock(String id, Block block, ItemGroup itemGroup) {
