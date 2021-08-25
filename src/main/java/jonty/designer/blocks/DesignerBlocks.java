@@ -3,6 +3,7 @@ package jonty.designer.blocks;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -41,6 +42,8 @@ public class DesignerBlocks implements ModInitializer {
     public static final Block DARKSTONE = new Block(FabricBlockSettings.of(Material.STONE).strength(2, 4).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
     public static final Block D_WOOL_RED = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+    public static final Block D_WOOL_BLUE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+
 
     private static final ConfiguredFeature<?, ?> LIMESTONE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -64,6 +67,7 @@ public class DesignerBlocks implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         RegistryKey<ConfiguredFeature<?, ?>> limestoneOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
                 new Identifier("designerblocks", "limestone_overworld"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, limestoneOverworld.getValue(), LIMESTONE_OVERWORLD);
@@ -85,6 +89,8 @@ public class DesignerBlocks implements ModInitializer {
         registerBlock("limestone", LIMESTONE, ItemGroup.MATERIALS);
 
         registerBlock("d_wool_red", D_WOOL_RED, ItemGroup.BUILDING_BLOCKS);
+        registerBlock("d_wool_blue", D_WOOL_BLUE, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, D_WOOL_BLUE);
     }
 
     private void registerBlock(String id, Block block, ItemGroup itemGroup) {
