@@ -30,7 +30,7 @@ public class DesignerBlocks implements ModInitializer {
     public static final Item BALL = new Item(new Item.Settings().group(ItemGroup.MISC));
 
     public static final Block D_GLASS = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never));
-    public static final Block ONE_WAY_STONE = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never));
+    public static final Block ONE_WAY_STONE = new OneWayStone(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never));
 
     public static final Block D_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block D_SANDSTONE = new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool());

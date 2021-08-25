@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "designerblocks:block/one_way_stone"
-    }
+    "facing=north": { "model": "designerblocks:block/one_way_stone", "uvlock": true },
+    "facing=east":  { "model": "designerblocks:block/one_way_stone", "y":  90, "uvlock": true },
+    "facing=south": { "model": "designerblocks:block/one_way_stone", "y": 180, "uvlock": true },
+    "facing=west":  { "model": "designerblocks:block/one_way_stone", "y": 270, "uvlock": true }
   }
 }
