@@ -9,8 +9,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class ChestnutLeaves extends Block {
-    public ChestnutLeaves(Settings settings) {
+public class DesignerLeavesBlock extends Block {
+    public DesignerLeavesBlock(Settings settings) {
         super(settings);
     }
 

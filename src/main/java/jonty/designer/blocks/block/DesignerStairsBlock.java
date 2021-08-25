@@ -11,8 +11,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class ChestnutStairs extends Block {
-    public ChestnutStairs(Settings settings) {
+public class DesignerStairsBlock extends Block {
+    public DesignerStairsBlock(Settings settings) {
         super(settings);
     }
 

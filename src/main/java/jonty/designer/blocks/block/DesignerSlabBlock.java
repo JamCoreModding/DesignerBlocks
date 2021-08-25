@@ -3,6 +3,7 @@ package jonty.designer.blocks.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
@@ -11,8 +12,11 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class ChestnutSlab extends Block {
-    public ChestnutSlab(Settings settings) {
+/**
+ * @author Jamalam360
+ */
+public class DesignerSlabBlock extends Block {
+    public DesignerSlabBlock(Settings settings) {
         super(settings);
     }
 
@@ -28,6 +32,6 @@ public class ChestnutSlab extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(1f, 1f, 1f, 1f, 1f, 1f);
+        return VoxelShapes.cuboid(0f, 0f, 0f, 1f, 0.5f, 1f);
     }
 }
