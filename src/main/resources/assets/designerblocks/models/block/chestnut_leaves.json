@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "designerblocks:block/chestnut_leaves"
+  }
+}d
