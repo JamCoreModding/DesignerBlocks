@@ -15,6 +15,7 @@ import net.minecraft.world.BlockView;
 /**
  * @author Jamalam360
  */
+
 public class DesignerSlabBlock extends Block {
     public DesignerSlabBlock(Settings settings) {
         super(settings);

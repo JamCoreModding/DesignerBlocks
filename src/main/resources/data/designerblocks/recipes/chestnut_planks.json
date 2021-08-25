@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+      "item": "designerblocks:chestnut_wood"
+    },
+    {
+      "item": "designerblocks:chestnut_log"
+    }
+    ]
+  },
+  "result": {
+    "item": "designerblocks:chestnut_planks",
+    "count": 4
+  }
+}

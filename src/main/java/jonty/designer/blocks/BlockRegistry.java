@@ -17,8 +17,8 @@ import net.minecraft.sound.BlockSoundGroup;
 
 @SuppressWarnings("unused")
 public class BlockRegistry {
-    public static final BlockEntry D_GLASS = new BlockEntry("d_glass", new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never).requiresTool()), ItemGroup.BUILDING_BLOCKS);
-    public static final BlockEntry ONE_WAY_STONE = new BlockEntry("one_way_stone", new OneWayStoneBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry D_GLASS = new BlockEntry("d_glass", new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry ONE_WAY_STONE = new BlockEntry("one_way_stone", new OneWayStoneBlock(FabricBlockSettings.copy(Blocks.GLASS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
 
     public static final BlockEntry D_STONE = new BlockEntry("d_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry D_SANDSTONE = new BlockEntry("d_sandstone", new Block(FabricBlockSettings.of(Material.STONE).strength(3, 7).sounds(BlockSoundGroup.DEEPSLATE_BRICKS).breakByTool(FabricToolTags.PICKAXES).requiresTool()), ItemGroup.BUILDING_BLOCKS);
