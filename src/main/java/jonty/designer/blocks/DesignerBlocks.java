@@ -43,7 +43,10 @@ public class DesignerBlocks implements ModInitializer {
 
     public static final Block D_WOOL_RED = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
     public static final Block D_WOOL_BLUE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
-
+    public static final Block D_WOOL_GREEN = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+    public static final Block D_WOOL_PURPLE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+    public static final Block D_WOOL_WHITE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
+    public static final Block D_WOOL_BLACK = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS));
 
     private static final ConfiguredFeature<?, ?> LIMESTONE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -89,8 +92,23 @@ public class DesignerBlocks implements ModInitializer {
         registerBlock("limestone", LIMESTONE, ItemGroup.MATERIALS);
 
         registerBlock("d_wool_red", D_WOOL_RED, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x800202, D_WOOL_RED);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0x800202, D_WOOL_RED);
         registerBlock("d_wool_blue", D_WOOL_BLUE, ItemGroup.BUILDING_BLOCKS);
-        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, D_WOOL_BLUE);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x0000c9, D_WOOL_BLUE);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0x0000c9, D_WOOL_BLUE);
+        registerBlock("d_wool_green", D_WOOL_GREEN, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x004a17, D_WOOL_GREEN);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0x004a17, D_WOOL_GREEN);
+        registerBlock("d_wool_purple", D_WOOL_PURPLE, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x5800a8, D_WOOL_PURPLE);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0x5800a8, D_WOOL_PURPLE);
+        registerBlock("d_wool_white", D_WOOL_WHITE, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0xffffff, D_WOOL_WHITE);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0xffffff, D_WOOL_WHITE);
+        registerBlock("d_wool_black", D_WOOL_BLACK, ItemGroup.BUILDING_BLOCKS);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x282828, D_WOOL_BLACK);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> 0x282828, D_WOOL_BLACK);
     }
 
     private void registerBlock(String id, Block block, ItemGroup itemGroup) {
