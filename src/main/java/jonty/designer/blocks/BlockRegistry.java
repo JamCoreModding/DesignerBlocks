@@ -36,7 +36,11 @@ public class BlockRegistry {
     public static final BlockEntry D_WOOL_BLACK = new BlockEntry("d_wool_black", new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5F, 3).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.SHEARS)), ItemGroup.BUILDING_BLOCKS);
 
     public static final BlockEntry CHESTNUT_PLANKS = new BlockEntry("chestnut_planks", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 5).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
-    public static final BlockEntry CHESTNUT_WOOD = new BlockEntry("chestnut_wood", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 4).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.MATERIALS);
+    public static final BlockEntry CHESTNUT_WOOD = new BlockEntry("chestnut_wood", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 4).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_LOG = new BlockEntry("chestnut_log", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 4).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
-    public static final BlockEntry CHESTNUT_LEAVES = new BlockEntry("chestnut_leaves", new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.1F, 1).sounds(BlockSoundGroup.GRASS).breakByTool(FabricToolTags.SHEARS).requiresTool()), ItemGroup.MATERIALS);
+    public static final BlockEntry CHESTNUT_LEAVES = new BlockEntry("chestnut_leaves", new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.1F, 1).sounds(BlockSoundGroup.GRASS).breakByTool(FabricToolTags.SHEARS).requiresTool()), ItemGroup.DECORATIONS);
+    public static final BlockEntry CHESTNUT_SLAB = new BlockEntry("chestnut_slab", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 5).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 5).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
+
+    
 }
