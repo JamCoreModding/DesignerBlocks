@@ -1,5 +1,5 @@
 {
-	"parent": "minecraft:block/slab",
+	"parent": "minecraft:block/slab_top",
 	"textures": {
 		"bottom": "designerblocks:block/chestnut_planks",
 		"top": "designerblocks:block/chestnut_planks",
