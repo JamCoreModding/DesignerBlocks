@@ -2,20 +2,16 @@ package jonty.designer.blocks;
 
 import io.github.jamalam360.libjam.registry.entry.BlockEntry;
 import jonty.designer.blocks.block.DesignerLeavesBlock;
-import jonty.designer.blocks.block.DesignerSlabBlock;
 import jonty.designer.blocks.block.DesignerStairsBlock;
 import jonty.designer.blocks.block.OneWayStoneBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.GlassBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 
 /**
- * @author Jamalam360
+ * @author Jamalam360 AND Jomlom but mostly Jomlom obviously
  */
 
 @SuppressWarnings("unused")
@@ -42,6 +38,6 @@ public class BlockRegistry {
     public static final BlockEntry CHESTNUT_WOOD = new BlockEntry("chestnut_wood", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 4).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_LOG = new BlockEntry("chestnut_log", new Block(FabricBlockSettings.of(Material.WOOD).strength(2, 4).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES)), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_LEAVES = new BlockEntry("chestnut_leaves", new DesignerLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.DECORATIONS);
-    public static final BlockEntry CHESTNUT_SLAB = new BlockEntry("chestnut_slab", new DesignerSlabBlock(FabricBlockSettings.copy(Blocks.OAK_SLAB).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
-    public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new DesignerStairsBlock(FabricBlockSettings.copy(Blocks.OAK_STAIRS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry CHESTNUT_SLAB = new BlockEntry("chestnut_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_SLAB).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new StairsBlock(FabricBlockSettings.copy(Blocks.OAK_STAIRS).allowsSpawning(DesignerBlocks::never).solidBlock(DesignerBlocks::never).suffocates(DesignerBlocks::never).blockVision(DesignerBlocks::never)), ItemGroup.BUILDING_BLOCKS);
 }
