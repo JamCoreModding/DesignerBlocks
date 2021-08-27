@@ -14,6 +14,9 @@ import net.minecraft.item.ItemGroup;
 public class BlockRegistry {
     public static final BlockEntry D_GLASS = new BlockEntry("d_glass", new GlassBlock(DesignerBlockSettings.getGlassSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry ONE_WAY_STONE = new BlockEntry("one_way_stone", new OneWayWindowBlock(DesignerBlockSettings.getGlassSettings()), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry ONE_WAY_DARKSTONE = new BlockEntry("one_way_darkstone", new OneWayWindowBlock(DesignerBlockSettings.getGlassSettings()), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry ONE_WAY_SANDSTONE = new BlockEntry("one_way_sandstone", new OneWayWindowBlock(DesignerBlockSettings.getGlassSettings()), ItemGroup.BUILDING_BLOCKS);
+    public static final BlockEntry ONE_WAY_LIMESTONE = new BlockEntry("one_way_limestone", new OneWayWindowBlock(DesignerBlockSettings.getGlassSettings()), ItemGroup.BUILDING_BLOCKS);
 
     public static final BlockEntry D_STONE = new BlockEntry("d_stone", new Block(DesignerBlockSettings.getBricksSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry D_SANDSTONE = new BlockEntry("d_sandstone", new Block(DesignerBlockSettings.getBricksSettings()), ItemGroup.BUILDING_BLOCKS);

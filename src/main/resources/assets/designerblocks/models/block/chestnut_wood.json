@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "designerblocks:block/chestnut_log_side",
-		"particle": "designerblocks:block/chestnut_log_side"
+		"0": "designerblocks:block/chestnut_log",
+		"particle": "designerblocks:block/chestnut_log"
 	},
 	"elements": [
 		{
