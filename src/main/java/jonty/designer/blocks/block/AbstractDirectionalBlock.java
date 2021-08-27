@@ -5,10 +5,12 @@ import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.Direction;
 
-public class OneWayStoneBlock extends Block {
-    public OneWayStoneBlock(Settings settings) {
+/**
+ * @author Jamalam360
+ */
+public abstract class AbstractDirectionalBlock extends Block {
+    public AbstractDirectionalBlock(Settings settings) {
         super(settings);
     }
 
@@ -20,15 +22,5 @@ public class OneWayStoneBlock extends Block {
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing().getOpposite());
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if (stateFrom.isOf(this)) {
-            return true;
-        } else {
-            return super.isSideInvisible(state, stateFrom, direction);
-        }
     }
 }

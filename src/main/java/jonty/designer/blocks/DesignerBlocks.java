@@ -58,14 +58,4 @@ public class DesignerBlocks implements ModInitializer {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, darkstoneOverworld.getValue(), DARKSTONE_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, darkstoneOverworld);
     }
-
-    @SuppressWarnings("unused")
-    public static boolean never(BlockState state, BlockView world, BlockPos pos) {
-        return false;
-    }
-
-    @SuppressWarnings("unused")
-    public static Boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
-        return false;
-    }
 }
