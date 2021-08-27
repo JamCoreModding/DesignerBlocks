@@ -1,7 +1,7 @@
 {
-	"parent": "designerblocks:block/cube_column",
-	"textures": {
-		"end": "designerblocks:block/chestnut_log_top",
-		"side": "designerblocks:block/chestnut_log"
-	}
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "designerblocks:block/chestnut_log_top",
+    "side": "designerblocks:block/chestnut_log"
+  }
 }
