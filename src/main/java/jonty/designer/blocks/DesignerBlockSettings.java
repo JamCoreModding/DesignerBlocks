@@ -42,6 +42,10 @@ public class DesignerBlockSettings {
         return FabricBlockSettings.of(Material.WOOD, MapColor.OAK_TAN).strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD).breakByTool(FabricToolTags.AXES);
     }
 
+    public static FabricBlockSettings getPlantSettings() {
+        return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS);
+    }
+
     public static boolean never(BlockState state, BlockView world, BlockPos pos) {
         return false;
     }

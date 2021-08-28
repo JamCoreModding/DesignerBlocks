@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "designerblocks:block/chestnut_sapling"
+  }
+}
