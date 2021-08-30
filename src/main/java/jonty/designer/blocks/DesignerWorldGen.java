@@ -58,7 +58,7 @@ public class DesignerWorldGen {
                     new ThreeLayersFeatureSize(1, 1, 0, 1, 2, OptionalInt.empty())))
                     .ignoreVines().build())
             .spreadHorizontally()
-            .applyChance(5); // About a 33% chance to generate per chunk (1/x)
+            .applyChance(5); // About a 20% chance to generate per chunk (1/x)
 
     @SuppressWarnings("deprecation")
     public static void register() {
