@@ -78,6 +78,6 @@ public class DesignerWorldGen {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.VEGETAL_DECORATION, chestnutTree);
     }
 
-    public static void init() {
+    public static void setupShitJavaIsFuckingStupidSoYouHaveToCallThisToLoadTheClassBeforeUsage() {
     }
 }
