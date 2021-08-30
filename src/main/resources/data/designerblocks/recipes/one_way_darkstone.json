@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#1",
+    "#1"
+  ],
+  "key": {
+    "#": {
+      "item": "designerblocks:d_darkstone"
+    },
+    "1": {
+      "item": "designerblocks:d_glass"
+    }
+  },
+  "result": {
+    "item": "designerblocks:one_way_darkstone",
+    "count": 4
+  }
+}

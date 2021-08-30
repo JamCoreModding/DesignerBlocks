@@ -15,10 +15,11 @@ public class DesignerBlocksClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ONE_WAY_SANDSTONE.getBlock(), RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.ONE_WAY_LIMESTONE.getBlock(), RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CHESTNUT_LEAVES.getBlock(), RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CHESTNUT_SAPLING.getBlock(), RenderLayer.getCutout());
 
         this.registerColorProvidedBlock(BlockRegistry.D_WOOL_RED.getBlock(), 0x800202);
-        this.registerColorProvidedBlock(BlockRegistry.D_WOOL_BLUE.getBlock(), 0x0000c9);
-        this.registerColorProvidedBlock(BlockRegistry.D_WOOL_GREEN.getBlock(), 0x004a17);
+        this.registerColorProvidedBlock(BlockRegistry.D_WOOL_BLUE.getBlock(), 0x00006b);
+        this.registerColorProvidedBlock(BlockRegistry.D_WOOL_GREEN.getBlock(), 0x356500);
         this.registerColorProvidedBlock(BlockRegistry.D_WOOL_PURPLE.getBlock(), 0x5800a8);
         this.registerColorProvidedBlock(BlockRegistry.D_WOOL_WHITE.getBlock(), 0xffffff);
         this.registerColorProvidedBlock(BlockRegistry.D_WOOL_BLACK.getBlock(), 0x282828);
