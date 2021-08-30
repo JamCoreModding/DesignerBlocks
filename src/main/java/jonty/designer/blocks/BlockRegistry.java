@@ -41,6 +41,5 @@ public class BlockRegistry {
     public static final BlockEntry CHESTNUT_LEAVES = new BlockEntry("chestnut_leaves", new LeavesBlock(DesignerBlockSettings.getLeavesSettings()), ItemGroup.DECORATIONS);
     public static final BlockEntry CHESTNUT_SLAB = new BlockEntry("chestnut_slab", new SlabBlock(DesignerBlockSettings.getPlanksSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new DesignerStairsBlock(CHESTNUT_PLANKS.getBlock().getDefaultState(), DesignerBlockSettings.getPlanksSettings()), ItemGroup.BUILDING_BLOCKS);
-    public static final BlockEntry CHESTNUT_SAPLING = new BlockEntry("chestnut_sapling", new DesignerSaplingBlock(new DesignerSaplingGenerator(TREE_CHESTNUT), DesignerBlockSettings.getPlantSettings()), ItemGroup.DECORATIONS);
-
+    public static final BlockEntry CHESTNUT_SAPLING = new BlockEntry("chestnut_sapling", new DesignerSaplingBlock(new DesignerSaplingGenerator(DesignerWorldGen.CHESTNUT_TREE), DesignerBlockSettings.getPlantSettings()), ItemGroup.DECORATIONS);
 }
