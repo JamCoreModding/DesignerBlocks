@@ -1,15 +1,12 @@
 package jonty.designer.blocks;
 
 import io.github.jamalam360.libjam.registry.entry.BlockEntry;
-import jonty.designer.blocks.block.DesignerSaplingBlock;
-import jonty.designer.blocks.block.DesignerSaplingGenerator;
-import jonty.designer.blocks.block.DesignerStairsBlock;
-import jonty.designer.blocks.block.OneWayWindowBlock;
+import jonty.designer.blocks.block.*;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 
 /**
- * @author Jamalam360 AND Jomlom but mostly Jamalam obviously
+ * @author Jamalam360 AND Jomlom but mostly Jomlom obviously
  */
 
 @SuppressWarnings("unused")
@@ -42,4 +39,6 @@ public class BlockRegistry {
     public static final BlockEntry CHESTNUT_SLAB = new BlockEntry("chestnut_slab", new SlabBlock(DesignerBlockSettings.getPlanksSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new DesignerStairsBlock(CHESTNUT_PLANKS.getBlock().getDefaultState(), DesignerBlockSettings.getPlanksSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_SAPLING = new BlockEntry("chestnut_sapling", new DesignerSaplingBlock(new DesignerSaplingGenerator(DesignerWorldGen.CHESTNUT_TREE), DesignerBlockSettings.getPlantSettings()), ItemGroup.DECORATIONS);
+
+    public static final BlockEntry LIGHT_PANEL = new BlockEntry("light_panel", new AbstractDirectionalBlock(DesignerBlockSettings.getWoolSettings()), ItemGroup.DECORATIONS);
 }

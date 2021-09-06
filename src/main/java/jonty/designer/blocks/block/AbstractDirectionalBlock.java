@@ -9,7 +9,7 @@ import net.minecraft.state.property.Properties;
 /**
  * @author Jamalam360
  */
-public abstract class AbstractDirectionalBlock extends Block {
+public class AbstractDirectionalBlock extends Block {
     public AbstractDirectionalBlock(Settings settings) {
         super(settings);
     }

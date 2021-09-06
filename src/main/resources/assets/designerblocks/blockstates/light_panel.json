@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "designerblocks:block/light_panel",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "designerblocks:block/light_panel",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "designerblocks:block/light_panel"
+    },
+    "facing=south": {
+      "model": "designerblocks:block/light_panel",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "designerblocks:block/light_panel"
+    },
+    "facing=west": {
+      "model": "designerblocks:block/light_panel",
+      "y": 270
+    }
+  }
+}
