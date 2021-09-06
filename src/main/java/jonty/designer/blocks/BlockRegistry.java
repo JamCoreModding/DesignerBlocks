@@ -6,7 +6,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 
 /**
- * @author Jamalam360 AND Jomlom but mostly Jomlom obviously
+ * @author Jamalam360 AND Jomlom but mostly Jamalam obviously
  */
 
 @SuppressWarnings("unused")
@@ -40,5 +40,5 @@ public class BlockRegistry {
     public static final BlockEntry CHESTNUT_STAIRS = new BlockEntry("chestnut_stairs", new DesignerStairsBlock(CHESTNUT_PLANKS.getBlock().getDefaultState(), DesignerBlockSettings.getPlanksSettings()), ItemGroup.BUILDING_BLOCKS);
     public static final BlockEntry CHESTNUT_SAPLING = new BlockEntry("chestnut_sapling", new DesignerSaplingBlock(new DesignerSaplingGenerator(DesignerWorldGen.CHESTNUT_TREE), DesignerBlockSettings.getPlantSettings()), ItemGroup.DECORATIONS);
 
-    public static final BlockEntry LIGHT_PANEL = new BlockEntry("light_panel", new AbstractDirectionalBlock(DesignerBlockSettings.getWoolSettings()), ItemGroup.DECORATIONS);
+    public static final BlockEntry LIGHT_PANEL = new BlockEntry("light_panel", new LightPanelBlock(DesignerBlockSettings.getWoolSettings().luminance(15)), ItemGroup.DECORATIONS);
 }

@@ -1,22 +1,22 @@
 {
   "variants": {
     "facing=down": {
-      "model": "designerblocks:block/light_panel",
-      "x": 180
+      "model": "designerblocks:block/light_panel"
     },
     "facing=east": {
       "model": "designerblocks:block/light_panel",
-      "y": 90
+      "z": 90
     },
     "facing=north": {
       "model": "designerblocks:block/light_panel"
     },
     "facing=south": {
       "model": "designerblocks:block/light_panel",
-      "y": 180
+      "x": 180
     },
     "facing=up": {
-      "model": "designerblocks:block/light_panel"
+      "model": "designerblocks:block/light_panel",
+      "z": 180
     },
     "facing=west": {
       "model": "designerblocks:block/light_panel",

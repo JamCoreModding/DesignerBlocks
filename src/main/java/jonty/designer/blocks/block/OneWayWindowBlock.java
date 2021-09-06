@@ -1,10 +1,11 @@
 package jonty.designer.blocks.block;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.Direction;
 
 public class OneWayWindowBlock extends AbstractDirectionalBlock {
-    public OneWayWindowBlock(Settings settings) {
+    public OneWayWindowBlock(AbstractBlock.Settings settings) {
         super(settings);
     }
 
