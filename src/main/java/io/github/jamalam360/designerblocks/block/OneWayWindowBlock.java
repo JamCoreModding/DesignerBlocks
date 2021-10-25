@@ -12,7 +12,7 @@ public class OneWayWindowBlock extends AbstractDirectionalBlock {
     @SuppressWarnings("deprecation")
     @Override
     public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if (stateFrom.isOf(this)) {
+        if (stateFrom.isOf(this) || stateFrom.getBlock() instanceof OneWayWindowBlock) {
             return true;
         } else {
             return super.isSideInvisible(state, stateFrom, direction);
