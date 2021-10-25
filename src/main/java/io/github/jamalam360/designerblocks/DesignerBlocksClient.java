@@ -1,4 +1,4 @@
-package jonty.designer.blocks;
+package io.github.jamalam360.designerblocks;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;

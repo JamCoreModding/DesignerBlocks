@@ -1,4 +1,4 @@
-package jonty.designer.blocks;
+package io.github.jamalam360.designerblocks;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -21,7 +21,7 @@ import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 
 import java.util.OptionalInt;
 
-import static jonty.designer.blocks.DesignerBlocks.MOD_ID;
+import static io.github.jamalam360.designerblocks.DesignerBlocks.MOD_ID;
 
 /**
  * @author Jamalam360

@@ -1,7 +1,7 @@
-package jonty.designer.blocks;
+package io.github.jamalam360.designerblocks;
 
 import io.github.jamalam360.libjam.registry.entry.BlockEntry;
-import jonty.designer.blocks.block.*;
+import io.github.jamalam360.designerblocks.block.*;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 

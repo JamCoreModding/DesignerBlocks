@@ -1,4 +1,4 @@
-package jonty.designer.blocks;
+package io.github.jamalam360.designerblocks;
 
 import io.github.jamalam360.libjam.registry.LibJamRegistry;
 import net.fabricmc.api.ModInitializer;
