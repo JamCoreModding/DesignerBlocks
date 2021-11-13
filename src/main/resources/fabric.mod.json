@@ -32,5 +32,8 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
+  },
+  "custom": {
+    "notify_version_url": "https://raw.githubusercontent.com/JamCoreModding/Meta/main/data/mod_versions.json"
   }
 }
